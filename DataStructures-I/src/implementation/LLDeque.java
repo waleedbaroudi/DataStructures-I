@@ -1,8 +1,9 @@
-package code;
+package implementation;
 
 
-import given.iDeque;
 import java.util.Iterator;
+
+import interfaces.iDeque;
 
 public class LLDeque<E> implements iDeque<E> {
 

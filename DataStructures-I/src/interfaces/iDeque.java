@@ -1,4 +1,4 @@
-package given;
+package interfaces;
 
 //Deque is a storage-type data structure that can be thought as an extension of stacks and queues
 //It supports insertion or deletion of elements from either the front or the back of the data structure

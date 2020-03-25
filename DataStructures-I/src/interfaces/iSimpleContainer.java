@@ -1,4 +1,4 @@
-package given;
+package interfaces;
 
 //This interface defines a simple container that can only be modified from "a single point". 
 //It support only three operations.

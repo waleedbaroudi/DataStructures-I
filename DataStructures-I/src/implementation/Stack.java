@@ -1,30 +1,21 @@
-package code;
+package implementation;
 
-import given.iDeque;
+import interfaces.iDeque;
+import interfaces.iSimpleContainer;
 
-/* 
- * ASSIGNMENT 2
- * AUTHOR:  <Insert Student Name>
- * Class : Queue
- *
- * MODIFY 
- * 
- * */
-
-import given.iSimpleContainer;
-
-//Queue implementation
+//Stack Implementation
 //E is the element type
 //C is the underlying Deque type
-public class Queue<C extends iDeque<E>, E> implements iSimpleContainer<E> {
+public class Stack<C extends iDeque<E>, E> implements iSimpleContainer<E> {
 
-	// C is generic. It indicates the type of the deque to store the elements
+//C is generic. It indicates the type of the deque to store the elements
 	// E is generic. It indicates the type of data to be stored in the deque
 
 	C deque;
 
-	public Queue(C inDeque) {
+	public Stack(C inDeque) {
 		deque = inDeque;
+
 	}
 
 	public String toString() {
@@ -38,12 +29,12 @@ public class Queue<C extends iDeque<E>, E> implements iSimpleContainer<E> {
 
 	@Override
 	public E pop() {
-		return deque.removeFront();
+		return deque.removeBehind();
 	}
 
 	@Override
 	public E peek() {
-		return deque.front();
+		return deque.behind();
 	}
 
 	@Override
@@ -60,4 +51,5 @@ public class Queue<C extends iDeque<E>, E> implements iSimpleContainer<E> {
 	public void clear() {
 		deque.clear();
 	}
+
 }

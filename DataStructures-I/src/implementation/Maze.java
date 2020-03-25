@@ -1,10 +1,11 @@
-package code;
+package implementation;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import given.iDeque;
-import given.iSimpleContainer;
+
+import interfaces.iDeque;
+import interfaces.iSimpleContainer;
 
 public class Maze {
 
