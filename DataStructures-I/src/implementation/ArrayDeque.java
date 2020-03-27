@@ -1,7 +1,13 @@
 package implementation;
 
+/*
+ * AUTHOR: Walid Baroudi
+ * Computer Engineering Student at Koc University
+ * E-mail: wbaroudi18@ku.edu.tr
+ * LinkedIn: linkedin.com/in/walid-baroudi/
+ * 
+ */
 
-//import java.util.Arrays;
 import java.util.Iterator;
 
 import interfaces.iDeque;
